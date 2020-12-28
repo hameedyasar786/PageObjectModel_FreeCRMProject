@@ -1,0 +1,48 @@
+package com.qa.testCase;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.qa.pages.HomePage;
+import com.qa.pages.LoginPage;
+import com.qa.testBase.TestBase;
+
+public class HomePageTest extends TestBase {
+	LoginPage loginPage;
+	HomePage homePage;
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		loginPage=new LoginPage();
+		loginPage.enterLoginDetails();
+	}
+	
+	@Test
+	public void verifyTheHomePage() {
+		Boolean Flag=homePage.validateHomePage();
+		Assert.assertTrue(Flag);		
+	}
+	@Test
+	public void ContactsPage() {
+		homePage.clickOnContactsLink();
+	}
+	@Test
+	public void DealsPage() {
+		homePage.clickOnDealsLink();
+	}
+	@Test
+	public void FormsPage() {
+		homePage.clickOnFormsLink();
+	}
+	
+	
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

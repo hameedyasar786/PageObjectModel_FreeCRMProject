@@ -1,0 +1,13 @@
+package com.qa.testCase;
+
+import com.qa.pages.ContactsPage;
+import com.qa.pages.HomePage;
+import com.qa.pages.LoginPage;
+import com.qa.testBase.TestBase;
+
+public class ContactsPageTest extends TestBase{
+	LoginPage loginPage;
+	HomePage homePage;
+	ContactsPage contactPage;
+
+}

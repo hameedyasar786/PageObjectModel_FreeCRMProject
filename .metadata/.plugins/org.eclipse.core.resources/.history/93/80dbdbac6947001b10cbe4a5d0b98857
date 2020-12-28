@@ -1,0 +1,55 @@
+package com.qa.testCase;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.qa.pages.ClassicCRMPage;
+import com.qa.pages.ForgetPasswordPage;
+import com.qa.pages.HomePage;
+import com.qa.pages.LoginPage;
+import com.qa.testBase.TestBase;
+
+public class LoginPageTest extends TestBase {
+	
+	LoginPage loginPage;
+	HomePage homePage;
+	ForgetPasswordPage forgetPwdPage;
+	ClassicCRMPage classicCrmPage;	
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		loginPage=new LoginPage();
+	}
+	
+	@Test
+	public void verifyTheLoginPage() {
+		String actualTitle=loginPage.validatLoginPage();
+		Assert.assertEquals(actualTitle,"Cogmento CRM");
+	}
+	@Test
+	public void EnteringLoginPageDetails() {
+		
+		homePage=loginPage.enterLoginDetails();
+	}
+	@Test
+	public void ClickOnForgetPasswordLink() {
+		forgetPwdPage=loginPage.clickForgetPasswordButton();
+	}
+	@Test
+	public void ClickOnClassicCRMPage() {
+		classicCrmPage=loginPage.clickClassicCRMButton();
+	}
+	@Test
+	public void ClickOnNewAccountRegistrationPage() {
+		registrationPage=loginPage.ClickOnNewAccountRegistration();
+	}
+		
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

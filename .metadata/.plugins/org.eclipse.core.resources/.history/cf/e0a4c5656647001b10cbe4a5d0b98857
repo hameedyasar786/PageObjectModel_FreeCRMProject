@@ -1,0 +1,16 @@
+package com.qa.pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.testBase.TestBase;
+
+public class ContactsPage extends TestBase {
+	
+	@FindBy(xpath="//div[@class='ui header item mb5 light-black']")
+	@CacheLookup
+	WebElement contactsPageText;
+	
+	public ContactsPage() {
+		PageFactory.initElements(driver,this);
+	}
+}

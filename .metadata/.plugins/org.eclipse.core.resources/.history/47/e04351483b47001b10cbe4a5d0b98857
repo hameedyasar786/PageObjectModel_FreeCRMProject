@@ -1,0 +1,32 @@
+package com.qa.testBase;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class TestBase {
+	public static WebDriver driver;
+	public static Properties prop;
+	
+	public TestBase() {
+		prop=new Properties();
+		FileInputStream FIS = null;
+		try {
+			FIS = new FileInputStream("C:\\Framework_Projects\\FreeCRM_Project"
+					+ "\\src\\main\\java\\com\\qa\\config\\config.properties");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			prop.load(FIS);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+}

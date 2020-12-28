@@ -1,0 +1,13 @@
+package com.qa.pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.testBase.TestBase;
+
+public class NewAccountRegistrationPage extends TestBase {
+	
+	public NewAccountRegistrationPage() {
+		PageFactory.initElements(driver,this);
+	}
+
+}

@@ -1,0 +1,63 @@
+package com.qa.testCase;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import org.testng.Assert;
+
+import com.qa.pages.ContactsPage;
+import com.qa.pages.HomePage;
+import com.qa.pages.LoginPage;
+import com.qa.testBase.TestBase;
+import com.qa.utils.TestUtils;
+
+
+public class ContactsPageTest extends TestBase{
+	LoginPage loginPage;
+	HomePage homePage;
+	ContactsPage contactsPage;
+	
+	public ContactsPageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		loginPage=new LoginPage();
+		contactsPage=new ContactsPage();
+		homePage=loginPage.enterLoginDetails(prop.getProperty("username"),prop.getProperty("password"));
+		contactsPage=homePage.clickOnContactsLink();
+	}
+	
+	@Test
+	public void verifyTheContactPageTest() {
+		boolean Flag=contactsPage.validateContactPage();
+		Assert.assertTrue(Flag,"Contacts label is missing on the page");
+	}
+	
+	@DataProvider
+	public Iterator<Object[]> getContactsRegTestData() {
+		ArrayList<Object[]> ContactsPageTestData=TestUtils.getContactsRegDataFromExcel();
+		return ContactsPageTestData.iterator();
+	}
+	
+	@Test(dataProvider="getContactsRegTestData")
+	public void newContactsDetailsTest(String firstname,String lastname,String email,String Address,String city,String state,String zipcode,String country) {
+		contactsPage.enteringTheNewContactDetails(firstname, lastname, email, Address, city, state, zipcode, country);
+	}
+	@Test
+	public void verifyTheSavedDetailsTest() {
+		contactsPage.validateSavedcontact();
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+}

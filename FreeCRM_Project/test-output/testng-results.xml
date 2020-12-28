@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="12" failed="0" skipped="7">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-27T16:01:08 EST" name="FREE CRM Application Test Automation Test Suite" finished-at="2020-12-27T16:03:12 EST" duration-ms="124302">
+    <groups>
+    </groups>
+    <test started-at="2020-12-27T16:01:08 EST" name="Free CRM App Test Cases" finished-at="2020-12-27T16:03:12 EST" duration-ms="124302">
+      <class name="com.qa.testCase.ContactsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:04 EST" name="setUp" finished-at="2020-12-27T16:03:12 EST" duration-ms="8057" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newContactsDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="newContactsDetailsTest" data-provider="getContactsRegTestData" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yasar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PH]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yasarhameed07@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[64 Ranstone Gardens]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Toronto]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Ontario]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[M1H1S2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newContactsDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992304" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992305" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newContactsDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="newContactsDetailsTest" data-provider="getContactsRegTestData" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hameed ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amulya Street]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ernakulam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kerala]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newContactsDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992310" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992311" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newContactsDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="newContactsDetailsTest" data-provider="getContactsRegTestData" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahmath]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hameed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahmath@outlook.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amulya Street]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ernakulam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kerala]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newContactsDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992316" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992317" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newContactsDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="newContactsDetailsTest" data-provider="getContactsRegTestData" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Thasni]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hameed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[thasnihameed08@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amulya Street]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ernakulam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kerala]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newContactsDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992324" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992325" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newContactsDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="newContactsDetailsTest" data-provider="getContactsRegTestData" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Azeez]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[adil@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Providence Street]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ernakulam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dubai]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[568791.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[United Arab Emirates]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newContactsDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992329" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992330" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTheContactPageTest()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="verifyTheContactPageTest" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheContactPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992337" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992338" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTheSavedDetailsTest()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="verifyTheSavedDetailsTest" finished-at="2020-12-27T16:03:12 EST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.qa.pages.LoginPage.enterLoginDetails(LoginPage.java:46)
+at com.qa.testCase.ContactsPageTest.setUp(ContactsPageTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheSavedDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.ContactsPageTest@636be97c]" started-at="2020-12-27T16:03:12 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1609102992342" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testCase.ContactsPageTest -->
+      <class name="com.qa.testCase.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:08 EST" name="setUp" finished-at="2020-12-27T16:01:17 EST" duration-ms="8942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTheLoginPageTest()[pri:1, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:17 EST" name="verifyTheLoginPageTest" finished-at="2020-12-27T16:01:17 EST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheLoginPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:17 EST" name="tearDown" finished-at="2020-12-27T16:01:17 EST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:18 EST" name="setUp" finished-at="2020-12-27T16:01:26 EST" duration-ms="7984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:26 EST" name="LoginTest" data-provider="getLoginTestData" finished-at="2020-12-27T16:01:27 EST" duration-ms="618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yasarhameed07@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qainspect07@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:27 EST" name="tearDown" finished-at="2020-12-27T16:01:27 EST" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:27 EST" name="setUp" finished-at="2020-12-27T16:01:35 EST" duration-ms="8044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:35 EST" name="LoginTest" data-provider="getLoginTestData" finished-at="2020-12-27T16:01:36 EST" duration-ms="390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:36 EST" name="tearDown" finished-at="2020-12-27T16:01:37 EST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:37 EST" name="setUp" finished-at="2020-12-27T16:01:44 EST" duration-ms="7708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:44 EST" name="LoginTest" data-provider="getLoginTestData" finished-at="2020-12-27T16:01:45 EST" duration-ms="670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yasarhameed07@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abc13738]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:45 EST" name="tearDown" finished-at="2020-12-27T16:01:46 EST" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:46 EST" name="setUp" finished-at="2020-12-27T16:01:53 EST" duration-ms="7438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:53 EST" name="LoginTest" data-provider="getLoginTestData" finished-at="2020-12-27T16:01:54 EST" duration-ms="552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hjvbsb@gmail.cm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qainspect07@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:54 EST" name="tearDown" finished-at="2020-12-27T16:01:54 EST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:01:54 EST" name="setUp" finished-at="2020-12-27T16:02:02 EST" duration-ms="7476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:02 EST" name="LoginTest" data-provider="getLoginTestData" finished-at="2020-12-27T16:02:02 EST" duration-ms="561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gamil.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:02 EST" name="tearDown" finished-at="2020-12-27T16:02:03 EST" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:03 EST" name="setUp" finished-at="2020-12-27T16:02:10 EST" duration-ms="7385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ClickOnForgetPasswordLinkTest()[pri:3, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:10 EST" name="ClickOnForgetPasswordLinkTest" finished-at="2020-12-27T16:02:12 EST" duration-ms="1224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnForgetPasswordLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:12 EST" name="tearDown" finished-at="2020-12-27T16:02:12 EST" duration-ms="721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:12 EST" name="setUp" finished-at="2020-12-27T16:02:20 EST" duration-ms="7972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ClickOnClassicCRMPageTest()[pri:4, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:20 EST" name="ClickOnClassicCRMPageTest" finished-at="2020-12-27T16:02:22 EST" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClassicCRMPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.LoginPageTest@5e82df6a]" started-at="2020-12-27T16:02:22 EST" name="tearDown" finished-at="2020-12-27T16:02:23 EST" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testCase.LoginPageTest -->
+      <class name="com.qa.testCase.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:23 EST" name="setUp" finished-at="2020-12-27T16:02:31 EST" duration-ms="8019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ContactsPageTest()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:31 EST" name="ContactsPageTest" finished-at="2020-12-27T16:02:32 EST" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactsPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:32 EST" name="tearDown" finished-at="2020-12-27T16:02:33 EST" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:33 EST" name="setUp" finished-at="2020-12-27T16:02:41 EST" duration-ms="7861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DealsPageTest()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:41 EST" name="DealsPageTest" finished-at="2020-12-27T16:02:42 EST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DealsPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:42 EST" name="tearDown" finished-at="2020-12-27T16:02:43 EST" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:43 EST" name="setUp" finished-at="2020-12-27T16:02:51 EST" duration-ms="7934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FormsPageTest()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:51 EST" name="FormsPageTest" finished-at="2020-12-27T16:02:53 EST" duration-ms="2095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FormsPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:53 EST" name="tearDown" finished-at="2020-12-27T16:02:54 EST" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:02:54 EST" name="setUp" finished-at="2020-12-27T16:03:02 EST" duration-ms="8111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTheHomePageTest()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:03:02 EST" name="verifyTheHomePageTest" finished-at="2020-12-27T16:03:03 EST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHomePageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCase.HomePageTest@3f197a46]" started-at="2020-12-27T16:03:03 EST" name="tearDown" finished-at="2020-12-27T16:03:04 EST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testCase.HomePageTest -->
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
+</testng-results>

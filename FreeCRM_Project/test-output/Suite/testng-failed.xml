@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.qa.testCase.ForgotPasswordPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyForgotPasswordPage"/>
+          <include name="setUp"/>
+          <include name="enterTheForgotPasswordEmail"/>
+        </methods>
+      </class> <!-- com.qa.testCase.ForgotPasswordPageTest -->
+      <class name="com.qa.testCase.FormsPageTest">
+        <methods>
+          <include name="verifyTheSavedDetails"/>
+          <include name="newFormsDetails"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyTheFormsPage"/>
+        </methods>
+      </class> <!-- com.qa.testCase.FormsPageTest -->
+      <class name="com.qa.testCase.ContactsPageTest">
+        <methods>
+          <include name="newContactsDetails"/>
+          <include name="verifyTheContactPage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyTheSavedDetails"/>
+        </methods>
+      </class> <!-- com.qa.testCase.ContactsPageTest -->
+      <class name="com.qa.testCase.DealsPageTest">
+        <methods>
+          <include name="verifyTheSavedDetails"/>
+          <include name="newDealsDetails"/>
+          <include name="verifyTheDealsPage"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testCase.DealsPageTest -->
+      <class name="com.qa.testCase.ClassicCRMPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyTheClassicCRMPageByLogo"/>
+          <include name="enterLoginNameAndPassword"/>
+          <include name="setUp"/>
+          <include name="verifyLoggedInTitle"/>
+        </methods>
+      </class> <!-- com.qa.testCase.ClassicCRMPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

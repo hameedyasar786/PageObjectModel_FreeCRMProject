@@ -1,0 +1,13 @@
+package com.qa.pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.testBase.TestBase;
+
+public class FormsPage extends TestBase{
+	
+	public FormsPage() {
+		PageFactory.initElements(driver,this);
+	}
+
+}

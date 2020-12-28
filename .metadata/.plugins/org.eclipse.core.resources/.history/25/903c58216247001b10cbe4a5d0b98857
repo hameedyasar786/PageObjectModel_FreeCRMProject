@@ -1,0 +1,13 @@
+package com.qa.pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.testBase.TestBase;
+
+public class DealsPage extends TestBase {
+
+	
+	public DealsPage() {
+		PageFactory.initElements(driver,this);
+	}
+}

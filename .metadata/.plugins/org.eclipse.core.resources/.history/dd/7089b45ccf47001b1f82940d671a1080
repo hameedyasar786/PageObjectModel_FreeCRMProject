@@ -1,0 +1,60 @@
+package com.qa.utils;
+
+import java.util.ArrayList;
+
+public class TestUtils {
+
+	public static int PAGELOAD_TIMEOUTS=30;
+	public static int IMPLICIT_WAIT_TIMEOUTS=40;
+	static Xls_Reader reader;
+	
+	public static ArrayList<Object[]> getDataFromExcel() {
+		ArrayList<Object[]> myData= new ArrayList<Object[]>();
+		ArrayList<Object[]> myData1= new ArrayList<Object[]>();
+		ArrayList<Object[]> myData2= new ArrayList<Object[]>();
+		ArrayList<Object[]> myData3= new ArrayList<Object[]>();
+		reader=new Xls_Reader("C:\\Framework_Projects\\FreeCRM_Project\\src\\main\\java\\com\\qa\\testData\\FreeCRMTestData.xlsx");
+		
+		for(int rowNum=2;rowNum<=reader.getRowCount("LoginData");rowNum++) {
+			String username=reader.getCellData("LoginData", "username", rowNum);
+			String password=reader.getCellData("LoginData", "password", rowNum);
+			
+			Object ob[]= {username,password};
+			myData.add(ob);
+		}
+		return myData;
+		
+		for(int rowNum=2;rowNum<=reader.getRowCount("ContactsRegData");rowNum++) {
+			String firstname=reader.getCellData("ContactsRegData", "FirstName", rowNum);
+			String lastname=reader.getCellData("ContactsRegData", "LastName", rowNum);
+			String email=reader.getCellData("ContactsRegData", "Email", rowNum);
+			String streetaddress=reader.getCellData("ContactsRegData", "StreetAddress", rowNum);
+			String city=reader.getCellData("ContactsRegData", "City", rowNum);
+			String state=reader.getCellData("ContactsRegData", "State", rowNum);
+			String zipcode=reader.getCellData("ContactsRegData", "Zipcode", rowNum);
+			String country=reader.getCellData("ContactsRegData", "Country", rowNum);
+			Object ob[]= {firstname,lastname,email,streetaddress,city,state,zipcode,country};
+			myData1.add(ob);
+		}
+		return myData;
+		
+		for(int rowNum=2;rowNum<=reader.getRowCount("LoginData");rowNum++) {
+			String username=reader.getCellData("LoginData", "username", rowNum);
+			String password=reader.getCellData("LoginData", "password", rowNum);
+			
+			Object ob[]= {username,password};
+			myData.add(ob);
+		}
+		return myData;
+		
+		for(int rowNum=2;rowNum<=reader.getRowCount("LoginData");rowNum++) {
+			String username=reader.getCellData("LoginData", "username", rowNum);
+			String password=reader.getCellData("LoginData", "password", rowNum);
+			
+			Object ob[]= {username,password};
+			myData.add(ob);
+		}
+		return myData;
+		
+	}
+}

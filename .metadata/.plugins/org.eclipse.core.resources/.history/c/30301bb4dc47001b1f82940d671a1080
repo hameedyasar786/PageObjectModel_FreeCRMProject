@@ -1,0 +1,65 @@
+package com.qa.testCase;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.qa.pages.ClassicCRMPage;
+import com.qa.pages.ForgetPasswordPage;
+import com.qa.pages.HomePage;
+import com.qa.pages.LoginPage;
+import com.qa.testBase.TestBase;
+import com.qa.utils.CustomListener;
+import com.qa.utils.TestUtils;
+@Listeners(CustomListener.class)
+public class LoginPageTest extends TestBase {
+	
+	LoginPage loginPage;
+	HomePage homePage;
+	ForgetPasswordPage forgetPwdPage;
+	ClassicCRMPage classicCrmPage;	
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		loginPage=new LoginPage();
+	}
+	
+	@Test
+	public void verifyTheLoginPageTest() {
+		String actualTitle=loginPage.validatLoginPage();
+		Assert.assertEquals(actualTitle,"Cogmento CRM");
+	}
+	
+	@DataProvider
+	public Iterator<Object[]> getLoginTestData() {
+		ArrayList<Object[]> LoginTestData=TestUtils.getLoginDataFromExcel();
+		return LoginTestData.iterator();
+		
+	}
+	@Test(dataProvider="getLoginTestData")
+	public void LoginTest(String username,String password) {
+		
+		homePage=loginPage.enterLoginDetails(username, password);
+	}
+	@Test
+	public void ClickOnForgetPasswordLinkTest() {
+		forgetPwdPage=loginPage.clickForgetPasswordButton();
+	}
+	@Test
+	public void ClickOnClassicCRMPageTest() {
+		classicCrmPage=loginPage.clickClassicCRMButton();
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

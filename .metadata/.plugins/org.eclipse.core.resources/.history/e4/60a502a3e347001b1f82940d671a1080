@@ -1,0 +1,63 @@
+package com.qa.testCase;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.qa.pages.ContactsPage;
+import com.qa.pages.DealsPage;
+import com.qa.pages.FormsPage;
+import com.qa.pages.HomePage;
+import com.qa.pages.LoginPage;
+import com.qa.testBase.TestBase;
+import com.qa.utils.CustomListener;
+import com.qa.utils.TestUtils;
+@Listeners(CustomListener.class)
+public class HomePageTest extends TestBase {
+	LoginPage loginPage;
+	HomePage homePage;
+	TestUtils testUtils;
+	ContactsPage contactsPage;
+	DealsPage dealsPage;
+	FormsPage formsPage;
+	public HomePageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		testUtils=new TestUtils();
+		contactsPage=new ContactsPage();
+		dealsPage=new DealsPage();
+		formsPage=new FormsPage();
+		loginPage=new LoginPage();
+		homePage=loginPage.enterLoginDetails();
+	}
+	
+	@Test
+	public void verifyTheHomePageTest() {
+		Boolean Flag=homePage.validateHomePage();
+		Assert.assertTrue(Flag);			
+	}
+	@Test
+	public void ContactsPageTest() {
+		contactsPage=homePage.clickOnContactsLink();
+	}
+	@Test
+	public void DealsPageTest() {
+		dealsPage=homePage.clickOnDealsLink();
+	}
+	@Test
+	public void FormsPageTest() {
+		formsPage=homePage.clickOnFormsLink();
+	}
+		
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

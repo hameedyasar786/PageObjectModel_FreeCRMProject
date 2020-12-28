@@ -1,0 +1,44 @@
+package com.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.testBase.TestBase;
+
+public class ForgetPasswordPage extends TestBase {
+	
+	@FindBy(xpath="//h2[contains(text(),'Forgot my password')]")
+	@CacheLookup
+	WebElement forgotPwd;
+	
+	@FindBy(xpath="//input[@id='email']")
+	@CacheLookup
+	WebElement emailAddress;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	@CacheLookup
+	WebElement resetPasswordBtn;
+	
+	@FindBy(xpath="//a[contains(text(),'Got an account? Log in here')]")
+	@CacheLookup
+	WebElement  accountLoginHere;
+		
+	public ForgetPasswordPage() {
+		PageFactory.initElements(driver,this);
+	}
+	
+	public boolean validateForgotMyPasswordPageTitle() {
+		boolean forgotPasswordHeadline=forgotPwd.isDisplayed();
+		return forgotPasswordHeadline;
+	}
+	
+	public void enterRegisteredEmail() {
+		emailAddress.sendKeys(prop.getProperty("username"));
+		
+	}
+	
+	
+
+}
